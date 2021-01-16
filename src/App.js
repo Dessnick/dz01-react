@@ -22,7 +22,7 @@ function App() {
           return lowerTitle.includes(lowerInputValue) || lowerDesc.includes(lowerInputValue);
         })
         .map((obj) => (
-          <Card key={obj.image} {...obj} />
+          <Card key={obj.image} image={obj.image} title={obj.title} description={obj.description} />
         ))}
     </div>
   );
