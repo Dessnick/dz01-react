@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="container">
       {data.map((obj) => (
-        <Card key={obj.image} img={obj.image} title={obj.title} desc={obj.description} />
+        <Card key={obj.image} {...obj} />
       ))}
     </div>
   );
